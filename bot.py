@@ -7,6 +7,7 @@ logging.getLogger().setLevel(logging.ERROR)
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from pyromod import listen
 from pyrogram import Client
+from pyrogram.types import BotCommand
 
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
@@ -27,12 +28,12 @@ class mxabot(Client):
         app.run()
 
 commands = [
-    ("start", "Start the bot"),
-    #("help", "Get help and instructions"),
-    #("settings", "Change bot settings")
+    BotCommand("start", "Start the bot"),
+    #BotCommand("help", "Get help and instructions"),
+    #BotCommand("settings", "Change bot settings")
 ]
 
-mxabot.set_commands(commands)
+mxabot.set_bot_commands(commands)
 
 if __name__ == "__main__":
     mxabot.main()
