@@ -26,6 +26,12 @@ class mxabot(Client):
                     )
         app.run()
 
+commands = [
+    ("start", "Start the bot"),
+    #("help", "Get help and instructions"),
+    #("settings", "Change bot settings")
+
+mxabot.set_commands(commands)
 
 if __name__ == "__main__":
     mxabot.main()
