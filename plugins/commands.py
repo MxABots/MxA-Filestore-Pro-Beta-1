@@ -38,5 +38,6 @@ async def start(client, message):
 
 
 mxabot.set_bot_commands([
-    BotCommand("start", "Start the bot")])
-    #BotCommand("settings", "Bot settings")])
+    BotCommand("start", "Start the bot"),
+    BotCommand("help", "Get help and instructions"),
+    BotCommand("settings", "Bot settings")])
