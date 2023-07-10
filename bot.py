@@ -30,6 +30,7 @@ commands = [
     ("start", "Start the bot"),
     #("help", "Get help and instructions"),
     #("settings", "Change bot settings")
+]
 
 mxabot.set_commands(commands)
 
