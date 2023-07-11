@@ -25,13 +25,10 @@ class mxabot(Client):
                      sleep_threshold=10,
                      in_memory=True
                     )
-
-
-
-app.set_bot_commands([
-    BotCommand("start", "Start the bot"),
-    BotCommand("settings", "Bot settings")
-])
+        app.set_bot_commands([
+            BotCommand("start", "Start the bot"),
+            BotCommand("settings", "Bot settings")
+        ])
 
 
 
