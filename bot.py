@@ -25,26 +25,8 @@ class mxabot(Client):
                      sleep_threshold=10,
                      in_memory=True
                     )
-        
         app.run()
 
-def set_commands():
-    app.set_bot_commands([
-    BotCommand("start", "Start the bot"),
-    BotCommand("settings", "Bot settings")
-    ])
-    
-    
-mxabot.set_commands()
-
-
-#commands = [
-#    BotCommand("start", "Start the bot"),
-    #BotCommand("help", "Get help and instructions"),
-    #BotCommand("settings", "Change bot settings")
-#]
-
-#mxabot.set_bot_commands(commands)
         
 if __name__ == "__main__":
     mxabot.main()
