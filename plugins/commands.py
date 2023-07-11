@@ -5,8 +5,7 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
     InlineKeyboardButton,
     CallbackQuery,
-    Message#,
-   # BotCommand
+    Message
 )
 from plugins.forcesub import force_sub
 
@@ -35,9 +34,3 @@ async def start(client, message):
         )
     )
 
-
-
-#mxabot.set_bot_commands([
-#    BotCommand("start", "Start the bot"),
-#    BotCommand("help", "Get help and instructions"),
-#    BotCommand("settings", "Bot settings")])
