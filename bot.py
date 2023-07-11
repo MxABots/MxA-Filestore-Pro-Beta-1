@@ -25,14 +25,17 @@ class mxabot(Client):
                      sleep_threshold=10,
                      in_memory=True
                     )
-        set_commands()
+        
         app.run()
 
 def set_commands():
-    mxabot.set_bot_commands([
+    app.set_bot_commands([
     BotCommand("start", "Start the bot"),
     BotCommand("settings", "Bot settings")
     ])
+    
+    
+mxabot.set_commands()
 
 
 #commands = [
