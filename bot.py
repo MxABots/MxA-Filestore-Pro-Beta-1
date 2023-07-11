@@ -25,6 +25,7 @@ class mxabot(Client):
                      sleep_threshold=10,
                      in_memory=True
                     )
+        set_commands()
         app.run()
 
 def set_commands():
