@@ -33,7 +33,7 @@ app.set_bot_commands([
     BotCommand("settings", "Bot settings")
 ])
 
-        app.run()
+
 
 #commands = [
 #    BotCommand("start", "Start the bot"),
@@ -42,6 +42,6 @@ app.set_bot_commands([
 #]
 
 #mxabot.set_bot_commands(commands)
-
+        app.run()
 if __name__ == "__main__":
     mxabot.main()
