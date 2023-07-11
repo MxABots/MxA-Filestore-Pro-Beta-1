@@ -7,7 +7,6 @@ logging.getLogger().setLevel(logging.ERROR)
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from pyromod import listen
 from pyrogram import Client
-from pyrogram.types import BotCommand
 
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
