@@ -16,4 +16,5 @@ async def handle_private_message(client: Client, message: Message):
     await adduser(client, message)
 
 @mxabot.on_message(filters.command('start'))
+async def st(client, message):
     await start(client, message):
