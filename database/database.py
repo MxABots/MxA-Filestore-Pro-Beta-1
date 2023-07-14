@@ -13,19 +13,9 @@ class Database:
 
     def new_user(self, id):
         return dict(
-            id=id,
-            join_date=datetime.date.today().isoformat()
+            id=id
         )
-         #   ban_status=dict(
-     #           is_banned=False,
-      #          ban_duration=0,
-       #         banned_on=datetime.date.max.isoformat(),
-        #        ban_reason='',
-         #       api=None,
-          #      shortner=None,
-             #   fsub=None
-          #  )
-       # )
+
 
     async def add_user(self, id):
         user = self.new_user(id)
